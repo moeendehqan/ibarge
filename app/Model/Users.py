@@ -27,6 +27,7 @@ class User(Document):
             return user_dict
         else:
             return None
+        
     @classmethod
     def get_user_one_by_id(cls, id):
         user_one = cls.objects(_id=ObjectId(id)).first()
